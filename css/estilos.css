@@ -8,7 +8,10 @@
 body{
     font-family: 'EB Garamond', serif;
 }
-
+/*////////////////////////////////////////////////// SPAN COLOR VER COMO MODIFICAR///////////////////////////////// */
+span{
+    color: #c2fbff;
+}
 /*================================= CLASES PARA INDEX ==========================================*/
 .bgIndexTiutlo{
     background: url(../img/imgMuestra6.jpg) no-repeat center center;;
@@ -719,7 +722,7 @@ width: 20%;
 .footerInfo, .itemFooter{
 margin: 0.2rem 0;
 opacity: 0.7;
-color: white;
+color: rgb(255, 255, 255);
 text-decoration: none;
 transition: 0.5s;
 }
@@ -745,10 +748,6 @@ width: 100px;
     width: 30px;
     font-size: 60px;
 }
-.socialLink1{
- font-size: large;
-}
-
 .socialLink:hover{
     opacity: 0.7;
 }
