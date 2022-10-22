@@ -15,13 +15,13 @@ span{
 /*================================= CLASES PARA INDEX ==========================================*/
 .bgIndexTiutlo{
     background: url(../img/imgMuestra6.jpg) no-repeat center center;;
-     height: 200px;
+     height: 500px;
      background-size: cover;
     }
     .bgIndexTiutlo::before{
         content: "";
         width: 100%;
-        height:200px;
+        height:500px;
         position: absolute;
         background: linear-gradient(-45deg, #1d1b1b, #171a1d); 
         opacity: 0.5;
@@ -37,7 +37,7 @@ span{
     height:400px;
     position: absolute;
     background: linear-gradient(-45deg, #0a0a09, #2e2e2d); 
-    opacity: 0.6;
+    opacity: 0.4;
 }
 .textoFrase{
     width: 100%;
@@ -52,22 +52,44 @@ span{
     margin-top: 100px;
 }
 .containerIndexImg{
-    display: flex;
     position: relative;
+}
+
+.slider2{
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    overflow:hidden;
+}
+.slider2 .sliderTrack2{
+    display: flex;
     align-items: center;
-    justify-content: center;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
+    width: calc(200 * 9);
+}
+.slider2 .slide2{
+    width: 100%;
+    margin: 15px;
+    padding: 15px;
+}
+@keyframes scroll{
+    0%{
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200 * 9));
+        transform: translateX(calc(-200 * 9));
+    }
 }
 .textoIndex{
-    display: flex;
     position: relative;
     margin: 20px;
     padding: 20px;
-    width: 100%;
     height: 200px;
     align-items: center;
     justify-content: flex-start;
-    border-left: 1px rgb(0, 0, 0) solid;
-   
 }
 .textoIndex2{
     font-family: 'Courier New', Courier, monospace;
@@ -136,7 +158,7 @@ span{
             color:#0e0d0d;
             display: flex;
           flex-direction: column;
-          justify-content: space-between;
+          justify-content: center;
           text-align: center;
           font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
