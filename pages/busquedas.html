@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:wght@400;500&family=Prompt:ital,wght@1,200&family=Splash&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/estilosDef.css">
         <link rel="stylesheet" href="../css/responsive.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script
@@ -16,8 +16,8 @@
       ></script>
         <title>Consultura</title>
     </head>
-<body class="fondoBusquedas">
-    <header class="container-fluid">
+<body>
+    <header>
         <div>
           <a href="../index.html"><span>
             <img src="../img/consultoraLogoColor.png" class="logo">
@@ -25,61 +25,126 @@
         </div>
         <nav>
           <ul>
-            <li><a class="hoverNav text-dark p-5" href="../index.html">Inicio</a></li>
-            <li><a class="hoverNav text-dark p-5" href="../pages/nosotros.html">Nosotros</a></li>
-            <li><a class="hoverNav text-dark p-5" href="../pages/busquedas.html">Busquedas Laborales</a></li>
-            <li><a class="hoverNav text-dark p-5" href="../pages/contacto.html">Contacto</a></li>
+            <li><a class="text-dark p-5" href="../index.html">Inicio</a></li>
+            <li><a class="text-dark p-5" href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a class="text-dark p-5" href="../pages/busquedas.html">Busquedas Laborales</a></li>
+            <li><a class="text-dark p-5" href="../pages/contacto.html">Contacto</a></li>
           </ul>
         </nav>
       </header>
-      <h1 class="text-center m-3 text-light hijoFondo">Propuestas Laborales</h1>
-      <section class="containerBusqueda">
-        <div class=".infoBusqueda">
-          <ul class="listaBusquedas hijoFondo">
-            <li class="text-light"> BUSQUEDA 1 </li>
-            <li class="text-light">BUSQUEDA 1</li>
-            <li class="text-light">BUSQUEDA 1</li>
-            <li class="text-light">BUSQUEDA 1</li>
-            <li class="text-light">BUSQUEDA 1</li>
-          </ul>
+      <div class="containerBusquedasTitulo">
+        <div class="fondoBusquedas infoBusquedas">
+        <div class="infoBusquedas2 hijoFondo text-center text-dark"><h2>Busquedas Laborales</h2></div>
+       </div>
+       <div class="fondoBusquedas2">
+          <div class="infoBusquedas3 hijoFondo text-center"><p>Aplica ahora, envianos tu CV.</p><p class="bordeBusquedas">gchconsultora4.0@gmail.com</p></div>
         </div>
-      </section>
-    </div>
-    <footer>
-      <div class="footerContainer">
-        <div class="footerContainerContenido">
-          <div class="logoFooter">
-            <a href="./index.html"
-              ><span>
-                <img src="../img/consultoraLogoColor.png" class="logo">
-              </span></a
-            >
+      </div>
+      <div class="displayBusquedas row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta1.webp" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 1</h5>
+              <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ab debitis fuga odit, commodi cumque possimus recusandae temporibus veniam, id distinctio tenetur, repellendus at illum. Deleniti ratione explicabo dolore ea! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quisquam numquam nisi quam excepturi esse sapiente officia aperiam ea sed. Sequi, amet. Sequi maiores numquam reiciendis harum assumenda magni voluptate?</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"> Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
-        <div class="footerContainerContenido">
-          <span class="menuTitulo">Siguenos!</span>
-          <div class="socialContainer">
-            <div class="socialLink iconoFooter2">
-              <a href="https://es-la.facebook.com/"><span><i class="fa-brands fa-facebook"></i></span></a>
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta2.webp" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque obcaecati nam eaque deserunt dignissimos facere aspernatur mollitia sapiente perferendis modi accusantium nihil ullam repellat cupiditate ad consequuntur ut, saepe expedita. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae velit suscipit explicabo expedita nihil adipisci dignissimos maiores molestiae pariatur deserunt? Eligendi impedit distinctio ratione, nesciunt veniam vel soluta quo possimus!</p>
             </div>
-            <div class="socialLink iconoFooter2">
-              <a href="https://www.instagram.com/"><span><i class="fa-brands fa-instagram"></i></span></a>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
             </div>
-            <div class="socialLink iconoFooter2">
-              <a href="https://www.linkedin.com/feed/"><span><i class="fa-brands fa-linkedin"></i></span></a> 
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta3.webp" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium ea excepturi, explicabo beatae temporibus minus optio eum enim delectus nostrum amet nisi ratione itaque qui, sint non cupiditate magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet tenetur totam dolorum, esse laudantium illo placeat consequuntur architecto reprehenderit blanditiis quos corrupti nihil fugit a recusandae amet nam? Hic?</p>
             </div>
-            <div class="socialLink iconoFooter2">
-              <a href="https://web.whatsapp.com/"><span><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
-            </div>
-            <div class="socialLink iconoFooter2">
-              <a href="https://www.google.com/intl/es-419/gmail/about/"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></a>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
       </div>
-      <div class="containerCopy">
-        <span class="copy">&copy;2022, gestionar-R.com </span>
+      <div class="displayBusquedas row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta4.jpg" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quas officiis vero amet, eum eos voluptatum quod, dolor deleniti vel qui incidunt iusto? Vitae explicabo quasi, cumque aspernatur magnam illum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quisquam numquam nisi quam excepturi esse sapiente officia aperiam ea sed. Sequi, amet. Sequi maiores numquam reiciendis harum assumenda magni voluptate?</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta5.webp" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iusto eos modi cumque velit, assumenda ea sint ipsum mollitia aperiam nobis non at suscipit maxime. Dolorum mollitia natus sunt temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae velit suscipit explicabo expedita nihil adipisci dignissimos maiores molestiae pariatur deserunt? Eligendi impedit distinctio ratione, nesciunt veniam vel soluta quo possimus!</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 m-3">
+            <img src="../img/ejemploPropuesta36webp.jpg" class="card-img-top imgBusquedas" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Propuesta 3</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia quaerat praesentium dolores consequatur ad reprehenderit, totam voluptatibus earum non culpa quisquam velit deleniti deserunt nostrum? Eaque ipsam iure enim deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis eveniet tenetur totam dolorum, esse laudantium illo placeat consequuntur architecto reprehenderit blanditiis quos corrupti nihil fugit a recusandae amet nam? Hic?</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+      <footer>
+        <div class="footerContainer">
+          <div class="footerContainerContenido">
+            <div class="logoFooter">
+              <a href="./index.html"
+                ><span>
+                  <img src="../img/consultoraLogoColor.png" class="logo2" />
+                </span></a
+              >
+            </div>
+          </div>
+          <div class="footerContainerContenido">
+            <span class="menuTituloFooter">Siguenos!</span>
+            <div class="socialContainer">
+              <div class="socialLink iconoFooter2">
+                <a href="https://www.linkedin.com/feed/"><span><i class="fa-brands fa-linkedin"></i></span></a> 
+              </div>
+              <div class="socialLink iconoFooter2">
+                <a href="https://web.whatsapp.com/"><span><i class="fa fa-whatsapp" aria-hidden="true"></i></span></a>
+              </div>
+              <div class="socialLink iconoFooter2">
+                <a href="https://www.google.com/intl/es-419/gmail/about/"><span><i class="fa fa-envelope-o" aria-hidden="true"></i></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerCopy">
+          <span class="copy">&copy;2022, gestionar-R.com </span>
+        </div>
+      </footer>
 </body>
 </html>
