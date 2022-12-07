@@ -1,16 +1,37 @@
-// //IDS NAVEGACION DEL CITIO//
-// let boton1 = document.getElementById ("boton1")
-// let boton2 = document.getElementById ("boton2")
-// let boton3 = document.getElementById ("boton3")
-// let boton4 = document.getElementById ("boton4")
-// let boton5 = document.getElementById ("boton5")
-// let boton6 = document.getElementById ("boton6")
-// let boton7 = document.getElementById ("boton7")
-// let boton8 = document.getElementById ("boton8")
-// let boton9 = document.getElementById ("boton9")
-// let boton10 = document.getElementById ("boton10")
-// let boton11 = document.getElementById ("boton11")
-// let boton12= document.getElementById ("boton12")
+
+// ================== MENU RESPONSIVE ==================
+const menuDesplegableElemento = document.getElementById("menuDesplegable")
+const menuContenidoElemento = document.getElementById("menuContenido")
+
+menuDesplegableElemento.addEventListener("click", ()=>{
+    menuContenidoElemento.classList.toggle("menuContenidoShow")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // //INDEX// INICIO//
 // boton1.onclick = ()=> {
 //     location.href ="./pages/nosotros.html"

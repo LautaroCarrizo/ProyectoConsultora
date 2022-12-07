@@ -1,82 +1,544 @@
-/*================================= MEDIA NAV Y TITULO ==================================*/
-@media (max-width: 1300px){
-    nav ul li{
-        margin-left: 30px;
-     }
-     .tituloPrincipal{
-        left: 78%;
-     }
-.subTitulo{
-    left: 103%;
-}
-.subTitulo2{
-left: 82%;
-}
-.tituloHtml{
-left: 73%;
-}
-}
-@media (max-width: 1095px){
-    nav ul li{
-        margin-left: 25px;
-     }
-}
-@media (max-width: 1050px){
-    nav ul li{
-        margin-left: 10px;
-     }
-     .tituloPrincipal{
-        left: 76%;
-     }
-.subTitulo{
-    left: 103%;
-}
-.subTitulo2{
-left: 82%;
-}
-.tituloHtml{
-left: 73%;
-}
+/* MEDIAS PARA DESKTOP */
+/* ============================================== MEDIAS PARA INDEX ============================================== */
+/* ============================================== DESKTOP ============================================== */
+@media screen and (min-width:1280px) and (max-width: 1440px){
+  header .logo{
+    width: 35vh;
+    height: 20vh;
+    top: -15px;
+    left: 83%;
+  }
+  #containerTextoCarrusel{
+    font-size: 30px;
+    width: 40%;
+    bottom: 400px;
+    }
+    #containerTextoCarrusel1{
+        font-size: 30px;
+        width: 40%;
+        bottom: 500px;
+    }
+    #containerTextoCarrusel2{
+        font-size: 30px;
+        width: 40%;
+        bottom: 500px;
+    }
 }
 
+/* ============================================== TABLET - DESKTOP ============================================== */
+@media screen and (min-width:768px) and (max-width: 1025px){
+  header nav ul li a{
+    position: relative;
+    margin: -35px;
+    top: 15px;
+     right: 3.5rem;
+     padding: 2;
+     font-size: 15px;
+  }
+  header .logo{
+    width: 29vh;
+    height: 18vh;
+    position: absolute;
+    left: 79%;
+    top: -2px;
+  }
+  .containerCarrusel .imgCarruselBusquedas{
+      height: 100vh;
+  }
+  #containerTextoCarrusel{
+    font-size: 20px;
+    width: 40%;
+    bottom: 300px;
+    }
+    #containerTextoCarrusel1{
+        font-size: 20px;
+        width: 40%;
+        bottom: 350px;
+    }
+    #containerTextoCarrusel2{
+        font-size: 20px;
+        width: 40%;
+        bottom: 350px;
+    }
+    .preguntaIndex{
+      top: -1.3rem;
+      position: relative;
+      font-size: 20px;
+    }
+    .container1 {
+      position: relative;
+      top:-3rem;
+    }
+    .container1 .card1{
+      position: relative;
+      width: 250px;
+      height: 280px;
+      margin: 20px;
+    }
+    .container1 .card1 .cara1 h5{
+      font-size: 17px;
+    }
+    .container1 .card1 .back {
+     font-size: 12px;
+    }
+    #fraseIndex{
+      font-size: 15px;
+    }
+ .containerBotonIndex h4{
+   left: -2.5rem;
+   font-size: 17px;
+ }
+ #footerContainerContenido{
+  position: relative;
+  left: -2.5rem;
+  top: -1.5rem;
+  }
+}
+/* ========================================= MENU HAMBUERGUESA ========================================= */
+@media screen and (min-width:576px) and (max-width: 767px){
+  header{
+    width: 100%;
+    height: 100vh;
+  } 
+  nav{
+    height: 100px;
+     width: 100%;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;
+   }
+  .menuDesplegable{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    right: 30rem;
+    top: -15px;
+    cursor: pointer;
+    }
+   
+  .menuContenido{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.95);
+    text-align: center;
+    transition: all .5s;
+  }
+  .menuContenido .menuItem{
+    display: block;
+   line-height: 30px;
+   margin: 45px 0;
+   transition: all .5s;
+  }
+  .menuContenido .menuItem .itemLink{
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .menuContenido .menuItem .itemLink.active,  .menuContenido .menuItem .itemLink:hover{
+    color: rgb(23, 232, 255);
+    transition: .3s;
+  }
+ /* #check{
+    display: none;
+  }
+ #check:checked ~ .menuContenido{
+    height: 100vh;
+  }
+  #check:checked ~ .menuContenido{
+    height: 100vh;
+    display: block;
+  }  */
 
+ header .logo{
+  width: 30vh;
+  height: 18vh;
+  position: absolute;
+  left: 70%;
+  top: -9px;
+ }
+ #textoIndex2{
+  font-size: 20px;
+ }
+ .carruselContenedor{
+  width: 100%;
+  height: 500px;
+ }
+ #containerTextoCarrusel{
+  font-size: 17px;
+  width: 40%;
+  bottom: 200px;
+  }
+  #containerTextoCarrusel1{
+      font-size: 17px;
+      width: 40%;
+      bottom: 250px;
+  }
+  #containerTextoCarrusel2{
+      font-size: 17px;
+      width: 40%;
+      bottom: 250px;
+  }
+ .preguntaIndex{
+  top: -13.7rem;
+  position: relative;
+  font-size: 18px;
+ }
+ .container1 {
+  position: relative;
+  top:-7rem;
+ }
+ .container1 .card1{
+  position: relative;
+  width: 200px;
+  height: 270px;
+  margin: 10px;
+ }
+ .container1 .card1 .cara1 h5{
+  font-size: 14px;
+ }
+ .container1 .card1 .back {
+ font-size: 10px;
+ }
+ #fraseIndex{
+  font-size: 13px;
+ }
+ .containerBotonIndex h4{
+ left: 5px;
+ font-size: 15px;
+ }
+ #btn {
+  position: relative;
+  left: 13.5rem;
+  top: 2.5rem;
+  width: 25vh;
+  height: 8vh;
+  font-size: 15px;
+ }
+ #logo2{
+  position: relative;
+  left: 13rem;
+ }
+ #footerContainerContenido{
+ position: relative;
+ left: -2.5rem;
+ top: -1.5rem;
+ }
+ }
+ @media screen and(min-width: 767px){
+  .menuDesplegable{
+    display: none;
+  }
+ }
+/* ============================================ MOBILE 480PX ============================================ */
+@media screen and (min-width: 475px) and (max-width: 485px){
+  .contenidoNav{
+   width: 100%;
+  }
+  .menuDesplegable{
+   width: 50%;
+   position: absolute;
+   right: 14.5rem;
+   top: 0.8rem;
+   cursor: pointer;
+   z-index: 1;
+   }
+   .menuDesplegable img{
+       width: 40px;
+       height: 40px;
+   }
+ .menuContenido{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: skyblue;
+   transition: 0.3s;
+   transform: translateX(-100%);
+ }
+ .menuContenidoShow{
+   transform: translateY(0);
+ }
+ .menuContenido .menuItem{
+   padding: 1rem;
+ }
+ .menuContenido .menuItem .menuLink{
+   text-decoration: none;
+   color: white;
+ }
 
+header .logo{
+ width:25vh;
+ height: 15vh;
+ position: absolute;
+ left: 70%;
+ top: -9px;
+}
+.bgIndexTiutlo{
+  width: 100%;
+  height: 100px;
+}
+#textoIndex2{
+ font-size: 15px;
+ width: 100%;
+ height: 120px;
+ text-align: center;
+}
+.carruselContenedor{
+ width: 576px;
+ height: 500px;
+}
+#containerTextoCarrusel{
+ font-size: 13px;
+ width: 40%;
+ bottom: 200px;
+ }
+ #containerTextoCarrusel1{
+  font-size: 13px;
+     width: 40%;
+     bottom: 250px;
+ }
+ #containerTextoCarrusel2{
+  font-size: 13px;
+     width: 40%;
+     bottom: 250px;
+ }
+.preguntaIndex{
+ top: -13.7rem;
+ position: relative;
+ font-size: 12px;
+ height: 65px;
+}
+.container1 {
+display: inline-block;
+height: 100%;
+position: relative;
+top: -13rem;
+right: -8rem;
+}
+.container1 .card1{
+ position: relative;
+ width: 200px;
+ height: 250px;
+}
+.container1 .card1 .cara1 h5{
+ font-size: 12px;
+}
+.container1 .card1 .back {
+font-size: 11px;
+}
+.containerSegundaFrase{
+  display: inline-block;
+  position: relative;
+  top: -10rem;
+  width: 100%;
+  height: 10rem;
+}
+#fraseIndex{
+  width: 100%;
+  height: 70%;
+  text-align:center;
+ font-size: 12px;
+}
+.containerSegundaFrase .imgIndex2{
+  width: 100%;
+  height: 10rem;
+}
 
+.containerBotonIndex h4{
+left: 5px;
+font-size: 11px;
+}
+#btn {
+ position: relative;
+ left: 7.8rem;
+ top: 2.5rem;
+ width: 15vh;
+ height: 5vh;
+ font-size: 10px;
+}
+#logo2{
+ position: relative;
+ left: 13rem;
+}
+footer .footerContainer .footerContainerContenido .logoFooter .logo2 {
+  width: 20vh;
+  height: 10vh;
+}
+footer .footerContainer .footerContainerContenido .menuTituloFooter {
+  font-size: 13px;
+  position: relative;
+  top: -10px;
+}
+footer .footerContainer .footerContainerContenido .socialContainer{
+  top: -20px;
+  position: relative;
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink {
+  height: 25;
+  width: 30px;
+  font-size: 30px;
+  margin: 3px;
+}
+}
+/* ============================================== MOBILE ============================================== */
+@media screen and (min-width: 320px) and (max-width: 400px){
+  .contenidoNav{
+   width: 100%;
+  }
+  .menuDesplegable{
+   width: 50%;
+   position: absolute;
+   right: 8.5rem;
+   top: 0.8rem;
+   cursor: pointer;
+   z-index: 1;
+   }
+   .menuDesplegable img{
+       width: 40px;
+       height: 40px;
+   }
+ .menuContenido{
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: skyblue;
+   transition: 0.3s;
+   transform: translateX(-100%);
+ }
+ .menuContenidoShow{
+   transform: translateY(0);
+ }
+ .menuContenido .menuItem{
+   padding: 1rem;
+ }
+ .menuContenido .menuItem .menuLink{
+   text-decoration: none;
+   color: white;
+ }
 
-@media (max-width: 760px){
-    .footerContainer{
-        padding: 2rem;
-        flex-direction: column;
-    }
-    .footerContainerContenido{
-        width: 100%;
-        padding: 2rem 0;
-        border-bottom: 1px solid #000;
-        justify-content: center;
-        align-items: center;
-    }
-    .footerContainerContenido:nth-of-type(1){
-        align-items: flex-start;
-    }
-    .footerContainerContenido:nth-of-type(3){
-        border-bottom: none;
-        padding-bottom: 0;
-    }
-    .footerMenu{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        border-bottom: 1px solid #203a43;
-    }
-    .footerMenu .footerContainerContenido:nth-of-type(1){
-        width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
-    }
-    .footerMenu .footerContainerContenido:nth-of-type(2){
-        width: 45%;
-        align-items: flex-start;
-        border-bottom: none;
-    }
+header .logo{
+ width:25vh;
+ height: 15vh;
+ position: absolute;
+ left: 54%;
+ top: -9px;
+}
+.bgIndexTiutlo{
+  width: 100%;
+  height: 100px;
+}
+#textoIndex2{
+ font-size: 12px;
+ width: 100%;
+ height: 120px;
+ text-align: center;
+}
+.carruselContenedor{
+ width: 576px;
+ height: 500px;
+}
+#containerTextoCarrusel{
+ font-size: 13px;
+ width: 40%;
+ bottom: 200px;
+ }
+ #containerTextoCarrusel1{
+  font-size: 13px;
+     width: 40%;
+     bottom: 250px;
+ }
+ #containerTextoCarrusel2{
+  font-size: 13px;
+     width: 40%;
+     bottom: 250px;
+ }
+.preguntaIndex{
+ top: -13.7rem;
+ position: relative;
+ font-size: 9px;
+ height: 65px;
+}
+.container1 {
+display: inline-block;
+height: 100%;
+position: relative;
+top: -13rem;
+right: -2.8rem;
+}
+.container1 .card1{
+ position: relative;
+ width: 200px;
+ height: 250px;
+}
+.container1 .card1 .cara1 h5{
+ font-size: 12px;
+}
+.container1 .card1 .back {
+font-size: 7px;
+}
+.containerSegundaFrase{
+  display: inline-block;
+  position: relative;
+  top: -10rem;
+  width: 100%;
+  height: 10rem;
+}
+#fraseIndex{
+  width: 100%;
+  height: 50%;
+  text-align:center;
+ font-size: 7px;
+}
+.containerSegundaFrase .imgIndex2{
+  width: 100%;
+  height: 10rem;
+}
+
+.containerBotonIndex h4{
+left: 5px;
+font-size: 10px;
+}
+#btn {
+ position: relative;
+ left: 7.8rem;
+ top: 2.5rem;
+ width: 15vh;
+ height: 5vh;
+ font-size: 10px;
+}
+#logo2{
+ position: relative;
+ left: 13rem;
+}
+footer .footerContainer .footerContainerContenido .logoFooter .logo2 {
+  width: 20vh;
+  height: 10vh;
+}
+footer .footerContainer .footerContainerContenido .menuTituloFooter {
+  font-size: 13px;
+  position: relative;
+  top: -10px;
+}
+footer .footerContainer .footerContainerContenido .socialContainer{
+  top: -20px;
+  position: relative;
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink {
+  height: 25;
+  width: 30px;
+  font-size: 30px;
+  margin: 3px;
+}
+
+}
+@media(min-width: 767px){
+ .menuDesplegable{
+   display: none;
+ }
 }
