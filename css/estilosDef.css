@@ -4,117 +4,235 @@
     box-sizing: border-box;
   }
   /*====================================== CLASES PARA NAV ======================================*/
-header {
+  header {
     background: #fff;
-    opacity: 0.9;
+    position: relative;
+    display: flex;
     width: 100%;
-    content: "";
-    clear: both;
-    display: table;
-    margin-bottom: 20px;
+    align-items: center;
+    height: 12vh;
+    margin: auto 0;
+    justify-content: space-evenly;
+    gap:5rem;
+    z-index: 2;
   }
-  header .logo {
-    width: 35vh;
-    height: 15vh;
-    position: absolute;
-    left: 81%;
-    top: -5px;
-  }
+
   header nav {
-    float: left;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 100%;
+    justify-content: space-around;
   }
   header nav ul li {
+    display: flex;
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    margin-left: 60px;
-    padding: 25px 0;
-    float: left;
+    text-align: center;
   }
   header nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: large;
-    padding: 40px;
+    font-size: calc(.8rem + .5vw);
+  }
+
+  /*==================   SPAN  ======================== */
+  .spanMenuHamburguer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 88vh;
+    width: 100%;
+    z-index: 1;
+    transition: transform .7s ease-in-out;
+    background-color: rgb(114, 113, 113,.7);
+
+  }
+
+  .translate{
+    transform: translateY(-100%);
+  } 
+
+  .spanMenuHamburguer__ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .spanMenuHamburguer__li{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 50%;
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px groove #fbfbfb;
+    box-shadow: 2px 2px 7px #333;
+    box-sizing: border-box;
+
+  }
+
+  .spanMenuHamburguer__link{
+    color: #fbfbfb;
+    font-size: 1.1rem;
+  }
+
+  .spanMenuHamburguer__link:hover{
+    text-decoration: underline;
+    color: #fbfbfb;
+  }
+
+  .logo-consultora{
+    width: 40%;
+    height: 14vh;
+  }
+
+  .menuAmburguer__container{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  .menuAmburguer{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+    justify-content: center;
+  }
+
+  .menuAmburguer div{
+    background-color: black;
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+  }  
+
+  .menuAmburguer:hover div:first-child{
+    transform:rotate(34deg)
+  }
+
+  .menuAmburguer:hover div:nth-child(2){
+    opacity: 0;
+  }
+
+  .menuAmburguer:hover div:last-child{
+    transform:rotate(-34deg);
   }
   /*================================= CLASES PARA INDEX ==========================================*/
   .bgIndexTiutlo {
     background: rgb(93, 93, 93);
   }
-  
   .textoIndex {
     display: flex;
     position: relative;
-    height: 200px;
+    height: 24vh;
     align-items: center;
     justify-content: center;
   }
   .textoIndex .textoIndex2 {
     font-family: Georgia, "Times New Roman", Times, serif;
     width: 100%;
-    margin: 30px;
-    padding: 20px;
     color: #b0e9ec;
+    display: flex;
+    justify-content: center;
   }
+
+  #textoIndex2{
+    font-size: calc(2vw + .4rem);
+    width: 90%;
+  }
+
+  /*=============== COMIENZA EL CARRUSEL =====*/
   
-  .containerCarrusel {
-    height: 500px;
+  .carruselContenedor {
+    height: 50vh;
+    position: relative;
   }
-  .containerCarrusel .imgCarruselBusquedas{
-    width: 100%;
+
+  .carousel-inner{
     height: 100%;
   }
-  .containerCarrusel .containerTextoCarrusel {
+
+  .carousel-item{
+    height: 100%;
+  }
+
+  .imgCarruselBusquedas{
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerCarrusel .containerTextoCarrusel{
     background: rgba(5, 7, 12, 0.75);
-    position: relative;
-    width: 35%;
-    bottom: 550px;
-    font-size: 40px;
+    position:absolute;
+    width: 45%;
+    height: 50%;
+    top: 50px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
     color: #fffcfc;
   }
-  .containerCarrusel .containerTextoCarrusel1 {
+  .containerTextoCarrusel{
+    display: flex;
+    text-align: center;
+    justify-content: center ;
     background: rgba(5, 7, 12, 0.75);
-    position: relative;
-    width: 35%;
-    bottom: 700px;
-    font-size: 40px;
+    position: absolute;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
     color: #fffcfc;
   }
-  .containerCarrusel .containerTextoCarrusel2 {
-    background: rgba(5, 7, 12, 0.75);
-    position: relative;
-    width: 35%;
-    bottom: 700px;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    color: #fffcfc;
+  
+  #containerTextoCarrusel{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    font-size: calc(2vw + .4rem);
+    gap: .2rem;
   }
+
   .containerCarrusel .palabraCarrusel1 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin: 0;
+
   }
   .containerCarrusel .palabraCarrusel3 {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     color: #fbb167;
+    margin: 0;
   }
+  /*============= FIN CARRUSEL ============*/
   
   .preguntaIndex {
     font-family: "Times New Roman", Times, serif;
-    font-size: 2rem;
+    font-size: calc(2vw + .4rem);
     background: #333;
     letter-spacing: 5px;
     color: #fff;
-    height: 80px;
     padding: 20px;
   }
-  
   .container1 {
     width: 100%;
     display: flex;
@@ -125,7 +243,7 @@ header {
   .container1 .card1 {
     position: relative;
     width: 315px;
-    height: 350px;
+    height: 55vh;
     margin: 20px;
   }
   .container1 .card1 .cara1 {
@@ -142,21 +260,27 @@ header {
   }
   .container1 .card1 .cara1 .img {
     width: 100%;
-    height: 200px;
+    height: 60%;
   }
   .container1 .card1 .front {
     transform: perspective(600px) rotateY(0);
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+  }
+  #text-cards{
+    height: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
   .container1 .card1 .back {
     transform: perspective(600px) rotateY(180deg);
     background-size: cover;
     padding: 15px;
+    font-size: calc(.85vw + .7rem);
     color: #0e0d0d;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   }
   .container1 .card1:hover .front {
@@ -165,13 +289,12 @@ header {
   .container1 .card1:hover .back {
     transform: perspective(600px) rotateY(360deg);
   }
-  
   .containerSegundaFrase {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50vh;
+    height: 38vh;
   }
   .containerSegundaFrase .segundaFrase {
     width: 50%;
@@ -179,19 +302,19 @@ header {
     background: #333;
   }
   .containerSegundaFrase .textoFrase {
-    width: 100%;
-    text-align: justify;
-    letter-spacing: 2px;
-    font-family: "Courier New", Courier, monospace;
     display: flex;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    width: 100%;
+    text-align: justify;
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.5rem;
   }
   .containerSegundaFrase .textoFrase .fraseIndex {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    padding: 25px;
-    font-size: 23px;
+    padding: 10px;
+    font-size: calc(2vw + .4rem);
   }
   .containerSegundaFrase .imgIndex2 {
     background: url(../img/imgINDEX3.png) no-repeat center center;
@@ -204,19 +327,22 @@ header {
     background: linear-gradient(to right, #ffefba, #ffffff);
     height: 30vh;
     color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
   .containerBotonIndex h4 {
     padding: 10px;
-    position: relative;
-    top: 40px;
-    left: -10%;
+    font-size: calc(2vw + .4rem);
+    margin: 5px;
   }
   .containerBotonIndex .btn {
     display: inline-flex;
     width: 30vh;
     height: 40px;
     background: linear-gradient(to left, rgb(19, 18, 18), rgb(53, 51, 51));
-    font-size: 20px;
+    font-size: calc(2vw + .4rem);
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
     justify-content: center;
@@ -225,17 +351,13 @@ header {
     text-transform: uppercase;
     transition: 0.3s ease all;
     border-radius: 5px;
-    position: relative;
     font-weight: 500;
-    left: 30%;
-    top: 60px;
     overflow:hidden ;
   }
   .containerBotonIndex .btn span {
     position: relative;
     color: white;
   } 
- 
   /*================================= CLASES PARA NOSOTROS ==========================================*/
   .containerVision {
     display: flex;
@@ -289,6 +411,190 @@ header {
     left: 60%;
     height: 577px;
     width: 600px;
+  }
+  .fundadoraContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    color: black;
+  }
+  .fundadoraContainer .infoFundadora {
+    width: 40%;
+    margin: 10px;
+    padding: 0px 0px 10px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .fundadoraContainer .infoFundadora .bordeValores {
+    border-top: 3px solid #333;
+  }
+  .fundadoraContainer .textoFundadora {
+    width: 60%;
+    margin: 20px;
+    padding: 10px;
+  }
+  .fundadoraContainer .imgFundadora {
+    position: relative;
+    left: -10%;
+    width: 300px;
+    height: 200px;
+    top: 10px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .fondoValores {
+    background: #333;
+    min-height: 170px;
+  }
+  .fondoValores .Titulos2 {
+    top: 20px;
+    padding: 0px 0px 10px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
+  .fondoValores .Titulos3 {
+    top: 20px;
+    padding: 0px 0px 10px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  .textoValores {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    letter-spacing: 2px;
+    height: 20px;
+  }
+  .cardContainerNosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  .cardContainerNosotros .cardNosotros {
+    background: #ffffff;
+    height: 500px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  .cardContainerNosotros .cardNosotros .imgValores {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .cardContainerNosotros .cardNosotros .cardNosotrosTitulo {
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
+  .cardContainerNosotros .cardNosotros .card-text1 {
+    letter-spacing: 2px;
+    border-top: 3px rgb(235, 171, 74) solid;
+    margin: 10px;
+  }
+  .bordeValores2 {
+    border-top: solid 3px #333;
+  }
+  .bordeValores2 .tituloClientes {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif, ExtraLight 200;
+    letter-spacing: 3px;
+  }
+  .slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider .sliderTrack {
+    display: flex;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: 2800px;
+  }
+  .slider .sliderTrack .slide {
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+  }
+  .slider .sliderTrack .slide img {
+    width: 100%;
+    height: 80px;
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1400px);
+      transform: translateX(-1400px);
+    }
+  }
+ 
+  /*================================= CLASES PARA NOSOTROS ==========================================*/
+  .containerVision {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    background: url(../img/imgMuestra.jpg) no-repeat center center;
+    min-height: 250px;
+    background-size: cover;
+  }
+  .containerVision .InfoVisionTexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .containerVision .InfoVisionTexto .fraseNosotros2 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    width: 100%;
+    margin: 30px;
+    padding: 20px;
+  }
+  .containerVision::before {
+    content: "";
+    width: 100%;
+    min-height: 250px;
+    position: absolute;
+    background: #0e0d0d;
+    opacity: 0.2;
+  }
+  .textoNosotrosVision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    width: 70%;
+    background: #333;
+  }
+  .textoNosotrosVision .preguntaNosotros {
+    color: #ffefba;
+  }
+  .textoNosotrosVision .conteinerImgNosotros {
+    width: 30%;
+  }
+  .textoNosotrosVision .conteinerImgNosotros .imgEquipo {
+    position: relative;
+    left: 60%;
+    height: 577px;
+    width: 598px;
   }
   .fundadoraContainer {
     display: flex;
@@ -656,68 +962,65 @@ header {
   }
 /*================================= CLASES PARA FOOTER ==========================================*/
 footer {
-    position: absolute;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(to left, rgb(19, 18, 18), rgb(53, 51, 51));
-    color: rgb(206, 206, 205);
-  }
-  footer .footerContainer {
-    height: fit-content;
-    width: 100%;
-    padding: 3rem 6rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  footer .footerContainer .footerContainerContenido {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 20%;
-  }
-  footer .footerContainer .footerContainerContenido .logoFooter {
-    width: 35vh;
-    height: 15vh;
-    position: absolute;
-    right: 95%;
-  }
-  footer .footerContainer .footerContainerContenido .logoFooter .logo2 {
-    width: 35vh;
-    height: 15vh;
-    position: absolute;
-    left: 83%;
-  }
-  footer .footerContainer .footerContainerContenido .menuTituloFooter {
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 1.2rem;
-  }
-  footer .footerContainer .footerContainerContenido .socialContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 100px;
-  }
-  footer .footerContainer .footerContainerContenido .socialContainer .socialLink {
-    height: 60px;
-    width: 30px;
-    font-size: 60px;
-  }
-  footer .footerContainer .footerContainerContenido .socialContainer .socialLink a {
-    color: rgb(103, 255, 204);
-  }
-  footer .footerContainer .footerContainerContenido .socialContainer .iconoFooter2 {
-    margin: 25px;
-  }
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(to left, rgb(19, 18, 18), rgb(53, 51, 51));
+  color: rgb(206, 206, 205);
+}
+footer .footerContainer {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 1rem;
+}
+
+footer .footerContainer .footerContainerContenido{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer .footerContainer .footerContainerContenido .logoFooter {
+  width: 100%;
+  height: 15vh;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+footer .footerContainer .footerContainerContenido .logoFooter .logo2 {
+  width: 100%;
+  height: 10vh;
+  align-self: center;
+  position: relative;
+  top:.5rem;
+}
+
+footer .footerContainer .footerContainerContenido .socialContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  align-self: center;
+  gap:.7rem;
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink {
+font-size: calc(1.5rem + 2vw);
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink a {
+  color: rgb(103, 255, 204);
+}
+footer .footerContainer .footerContainerContenido .socialContainer .iconoFooter2 {
+  gap:1rem;
+}
   /*================================= CLASES COMPARTIDAS ==========================================*/
   .hijoFondo{
     color: white;

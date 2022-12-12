@@ -11,8 +11,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/estilosDef.css" />
-    <link rel="stylesheet" href="../Proyecto RRHH/css/responsive.css" />
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive/640minWidth.css" />
+    <link rel="stylesheet" href="./css/responsive/800minWidth.css" />
+    <link rel="stylesheet" href="./css/responsive/1000minWidth.css" />
+    <link rel="stylesheet" href="./css/responsive/1270minWidth.css" />
+    <link rel="stylesheet" href="./css/responsive/1536minWidth.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&display=swap"
       rel="stylesheet"
@@ -21,24 +24,20 @@
       src="https://kit.fontawesome.com/ef146f5059.js"
       crossorigin="anonymous"
     ></script>
-    <title>Consultura</title>
+    <title>Consultora</title>
   </head>
-  <body>
+  <body id="body">
     <!--=================================================================== NAV + LOGO ===================================================================-->
     <header>
-      <div>
-        <a href="./index.html"
-          ><span>
-            <img src="./img/consultoraLogoColor.png" class="logo" id="logo" />
-          </span></a
-        >
+      <div class="menuAmburguer__container">
+        <button class="menuAmburguer">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </div>
       <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="menuDesplegable">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-        <ul class="menuContenido">
+        <ul style="margin:0;">
           <li class="menuItem">
             <a href="./index.html" class="itemLink">Inicio</a>
           </li>
@@ -53,12 +52,29 @@
           </li>
         </ul>
       </nav>
+      <img src="./img/consultoraLogoColor.png" class="logo-consultora" alt="logoConsultora" />
     </header>
+    <nav class="spanMenuHamburguer translate" id="spanAmburger">
+      <ul class="spanMenuHamburguer__ul">
+        <li class="spanMenuHamburguer__li">
+          <a href="./index.html" class="spanMenuHamburguer__link">Inicio</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/nosotros.html" class="spanMenuHamburguer__link">Nosotros</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/busquedas.html" class="spanMenuHamburguer__link">Busquedas Laborales</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/contacto.html" class="spanMenuHamburguer__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
     <!--=================================================================== FRASE INDEX + IMAGEN ===================================================================-->
     <section class="bgIndexTiutlo">
       <div class="textoIndex">
         <div class="textoIndex2">
-         <p class="h2 text-center text-light" id="textoIndex2"> Acompañamos a las empresas como socios estratégicos en el desarrollo de su capital humano.</p> 
+         <p class="text-center text-light" style="margin:0;" id="textoIndex2"> Acompañamos a las empresas como socios estratégicos en el desarrollo de su capital humano.</p> 
         </div>
       </div>
     </section>
@@ -68,24 +84,24 @@
             <div class="carousel-item active">
               <img src="./img/imgCarrusel1.png" class="d-block imgCarruselBusquedas" id="imgCarruselBusquedas" alt="...">
               <div class="containerTextoCarrusel" id="containerTextoCarrusel">
-                <p class="palabraCarrusel1 text-center">Asesoramos</p>
-                <p class="text-center">sobre procesos de </p>
-                <p class="palabraCarrusel3 text-center">Recursos Humanos</p>
+                <p class="palabraCarrusel1">Asesoramos</p>
+                <p style="margin:0;">sobre procesos de </p>
+                <p class=" palabraCarrusel3">Recursos Humanos</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/imgCarrusel4.png" class="d-block imgCarruselBusquedas" id="imgCarruselBusquedas" alt="...">
-              <div class="containerTextoCarrusel1" id="containerTextoCarrusel1">
-                <p class="palabraCarrusel3 text-center">Asistimos</p>
-                <p class="palabraCarrusel1 text-center">a líderes de equipos</p>
+              <div class="containerTextoCarrusel" id="containerTextoCarrusel">
+                <p class="palabraCarrusel3">Asistimos</p>
+                <p class="palabraCarrusel1">a líderes de equipos</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./img/imgCarrusel2.png" class="d-block imgCarruselBusquedas" id="imgCarruselBusquedas" alt="...">
-              <div class="containerTextoCarrusel2" id="containerTextoCarrusel2">
-                <p class="palabraCarrusel1 text-center">Buscamos y evaluamos</p>
-                <p class="palabraCarrusel3 text-center">el talento</p>
-                <p class="palabraCarrusel3 text-center"> que necesita tu empresa</p>
+              <div class="containerTextoCarrusel" id="containerTextoCarrusel">
+                <p class="palabraCarrusel1">Buscamos y evaluamos</p>
+                <p class="palabraCarrusel3">el talento</p>
+                <p class="palabraCarrusel3"> que necesita tu empresa</p>
               </div>
             </div>
           </div>
@@ -103,92 +119,98 @@
       <h3 class="text-center preguntaIndex">¿COMO PODEMOS AYUDARTE?</h3>
     </div>
         <!--=================================================================== CARDS DE SERVICIOS ===================================================================-->
-    <section class="container1 bgIndexTiutlo">
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/card2.jpg" class="img" />
-          <h5 class="h4 m-2">Selección de personal</h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Identificación y selección de perfiles para diferentes puestos, desde posiciones operativas hasta gerenciales, mandos medios y especializados.
-
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/card6.jpg" class="img" />
-          <h5 class="h4 m-2"> Psicotécnicos</h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Indagación de la trayectoria laboral, competencias, expectativas de cambio y  crecimiento a través de una entrevista en profundidad. Se acompaña de técnicas de evaluación, acordes al perfil de puesto, que ponderan componentes de personalidad los cuales permiten inferir cómo se desenvolverá laboralmente el candidato, si se adecua o no al requerimiento del puesto.
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/card5.jpg" class="img" />
-          <h5 class="h4 m-2"> Evaluación de Potencial</h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Además de  la entrevista en profundidad y la batería de test, se utiliza la técnica de Análisis del discurso (ElliotJaques), a fin de determinar el tipo de procesamiento mental y su correlación con el Estrato de Trabajo correspondiente. Considerando   la información aportada por esta técnica se obtiene la Capacidad Potencial Actual y Futura del evaluado.
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/card4.jpg" class="img" />
-          <h5 class="h4 m-2">Evaluación de Potencial por juicios gerenciales
-          </h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Evaluación que realizan el GD (Gerente Directo) y GDG (Gerente del Gerente). Esta herramientas se aplica internamente para la gestión del talento y facilita la toma de decisiones en relación a: Delinear Planes de Carrera, Identificación de personas claves de la Compañía y Cuadros de reemplazo.
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/card3.jpg" class="img" />
-          <h5 class="h4 m-2"> Talleres Conversacionales y Formación de habilidades blandas </h5>
-          </p>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Se prioriza una modalidad de aprendizaje que se basa en un modelo de observación, acción y resultado que entiende que las acciones que cada persona realiza y los resultados que obtiene dependen del tipo de observador que es. Siendo observadores diferentes logramos ver nuevas oportunidades de acción.
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/rrhh2.jpg" class="img" />
-          <h5 class="h4 m-2">Coaching ejecutivo </h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            Proceso de acompañamiento y planificación estructurados para desarrollar una nueva manera de liderar, de gestionar equipos y así obtener mejores resultados
-          </p>
-        </div>
-      </div>
-      <div class="card1">
-        <div class="cara1 front">
-          <img src="./img/rrhh4.jpg" class="img" />
-          <h5 class="h4 m-2"> Consultoría Desarrollo Organizacional
-          </h5>
-        </div>
-        <div class="cara1 back">
-          <p>
-            A partir de conocer su situación actual, acompañamos a las empresas a través de nuestro conocimiento, experiencia, metodologías, herramientas y habilidades, a generar los cambios necesarios para una mayor optimización. 
-          </p>
-        </div>
-      </div>
-    </section>
+        <section class="container1 bgIndexTiutlo">
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/card2.jpg" class="img" />
+              <div id="text-cards">
+                <h5 class="h4">Selección de personal</h5>
+              </div>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Identificación y selección de perfiles para diferentes puestos, desde posiciones operativas hasta gerenciales, mandos medios y especializados.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/card6.jpg" class="img" />
+              <div id="text-cards">
+                <h5 class="h4"> Psicotécnicos</h5>
+              </div>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Indagación de la trayectoria laboral, competencias, expectativas de cambio y  crecimiento a través de una entrevista en profundidad. Se acompaña de técnicas de evaluación, acordes al perfil de puesto, que ponderan componentes de personalidad los cuales permiten inferir cómo se desenvolverá laboralmente el candidato, si se adecua o no al requerimiento del puesto.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/card5.jpg" class="img" />
+              <div id="text-cards">
+                <h5 class="h4" id="text-cards"> Evaluación de Potencial</h5>
+              </div>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Además de  la entrevista en profundidad y la batería de test, se utiliza la técnica de Análisis del discurso (ElliotJaques), a fin de determinar el tipo de procesamiento mental y su correlación con el Estrato de Trabajo correspondiente. Considerando   la información aportada por esta técnica se obtiene la Capacidad Potencial Actual y Futura del evaluado.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/card4.jpg" class="img" />
+              <div id="text-cards">
+                <h5 class="h4" >Evaluación de Potencial por juicios gerenciales</h5>
+              </div>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Evaluación que realizan el GD (Gerente Directo) y GDG (Gerente del Gerente). Esta herramientas se aplica internamente para la gestión del talento y facilita la toma de decisiones en relación a: Delinear Planes de Carrera, Identificación de personas claves de la Compañía y Cuadros de reemplazo.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/card3.jpg" class="img" />
+              <h5 class="h4" id="text-cards"> Talleres Conversacionales y Formación de habilidades blandas </h5>
+              </p>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Se prioriza una modalidad de aprendizaje que se basa en un modelo de observación, acción y resultado que entiende que las acciones que cada persona realiza y los resultados que obtiene dependen del tipo de observador que es. Siendo observadores diferentes logramos ver nuevas oportunidades de acción.
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/rrhh2.jpg" class="img" />
+              <h5 class="h4" id="text-cards">Coaching ejecutivo </h5>
+            </div>
+            <div class="cara1 back">
+              <p>
+                Proceso de acompañamiento y planificación estructurados para desarrollar una nueva manera de liderar, de gestionar equipos y así obtener mejores resultados
+              </p>
+            </div>
+          </div>
+          <div class="card1">
+            <div class="cara1 front">
+              <img src="./img/rrhh4.jpg" class="img" />
+              <h5 class="h4" id="text-cards"> Consultoría Desarrollo Organizacional
+              </h5>
+            </div>
+            <div class="cara1 back">
+              <p>
+                A partir de conocer su situación actual, acompañamos a las empresas a través de nuestro conocimiento, experiencia, metodologías, herramientas y habilidades, a generar los cambios necesarios para una mayor optimización. 
+              </p>
+            </div>
+          </div>
+        </section>
         <!--=================================================================== SEGUNFA FRASE + IMG + BTN ===================================================================-->
     <div class="containerSegundaFrase">
-      <div class="segundaFrase text-center textoFrase text-dark hijoFondo">
+      <div class="text-center segundaFrase textoFrase text-dark hijoFondo">
         <h3 class="h2 fraseIndex" id="fraseIndex">
           Cada empresa tiene necesidades únicas. Estamos comprometidos a brindar, el mejor y más personalizado servicio para su empresa.
           </h3>
@@ -209,13 +231,13 @@
         <div class="footerContainerContenido">
           <div class="logoFooter">
             <a href="./index.html"
-              ><span>
+              >
                 <img src="./img/consultoraLogoColor.png" class="logo2" id="logo2"/>
-              </span></a
+              </a
             >
           </div>
         </div>
-        <div class="footerContainerContenido" id="footerContainerContenido">
+        <div class="footerContainerContenido" class="footerContainerContenido">
           <span class="menuTituloFooter">Siguenos!</span>
           <div class="socialContainer">
             <div class="socialLink iconoFooter2">
@@ -236,5 +258,6 @@
     </footer>
     <script src="./javaScript/proyectoRRHH.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./javaScript/header/menuAmburguer.js"></script>
   </body>
 </html>

@@ -143,17 +143,6 @@
     color: rgb(23, 232, 255);
     transition: .3s;
   }
- /* #check{
-    display: none;
-  }
- #check:checked ~ .menuContenido{
-    height: 100vh;
-  }
-  #check:checked ~ .menuContenido{
-    height: 100vh;
-    display: block;
-  }  */
-
  header .logo{
   width: 30vh;
   height: 18vh;
