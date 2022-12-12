@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  .body{
+    overflow-y: hidden;
+  }
   /*====================================== CLASES PARA NAV ======================================*/
   header {
     background: #fff;
@@ -841,7 +844,7 @@
 /*================================= CLASES PARA CONTACTO ==========================================*/
 .fondoContacto {
     background: url(../img/fondoContacto2.jpg) no-repeat center center;
-    min-height: 50%;
+    min-height: 100vh;
     background-size: cover;
   }
   .fondoContacto .pagContacto {
@@ -948,17 +951,15 @@
     padding: 10px;
     font-size: 18px;
   }
-  
   .fondoContacto::before {
     content: "";
     width: 100%;
-    height: 800px;
+    height: 114vh;
     position: absolute;
     top: 0;
     left: 0;
     background: black;
     opacity: 0.6;
-    margin-top: 97px;
   }
 /*================================= CLASES PARA FOOTER ==========================================*/
 footer {

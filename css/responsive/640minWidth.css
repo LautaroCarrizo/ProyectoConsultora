@@ -1,9 +1,7 @@
 @media screen and (min-width:640px){
-    
     header{
         gap:0;
     }
-
     header nav{
         display: flex;
     }
@@ -48,4 +46,11 @@
         height: 40px;
         font-size: calc(2vw + .1rem);
       }
+ /* ========================================== PAGINA CONTACTO ========================================== */
+ .fondoContacto .pagContacto {
+  padding: 30px 45px;
+}
+.fondoContacto::before {
+  height: 131vh;
+}
 }

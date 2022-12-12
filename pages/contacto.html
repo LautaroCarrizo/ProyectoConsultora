@@ -16,7 +16,11 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/estilosDef.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/responsive/640minWidth.css" />
+    <link rel="stylesheet" href="../css/responsive/800minWidth.css" />
+    <link rel="stylesheet" href="../css/responsive/1000minWidth.css" />
+    <link rel="stylesheet" href="../css/responsive/1270minWidth.css" />
+    <link rel="stylesheet" href="../css/responsive/1536minWidth.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script
       src="https://kit.fontawesome.com/ef146f5059.js"
@@ -37,7 +41,7 @@
       <nav>
         <ul style="margin:0;">
           <li class="menuItem">
-            <a href="../index.html" class="itemLink">Inicio</a>
+            <a href="./index.html" class="itemLink">Inicio</a>
           </li>
           <li class="menuItem">
             <a href="../pages/nosotros.html" class="itemLink">Nosotros</a>
@@ -50,76 +54,92 @@
           </li>
         </ul>
       </nav>
-      <img src="../img/consultoraLogoColor.png" class="logo-consultora" />
+      <img src="../img/consultoraLogoColor.png" class="logo-consultora" alt="logoConsultora" />
+    </header>
+    <nav class="spanMenuHamburguer translate" id="spanAmburger">
+      <ul class="spanMenuHamburguer__ul">
+        <li class="spanMenuHamburguer__li">
+          <a href="./index.html" class="spanMenuHamburguer__link">Inicio</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/nosotros.html" class="spanMenuHamburguer__link">Nosotros</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/busquedas.html" class="spanMenuHamburguer__link">Busquedas Laborales</a>
+        </li>
+        <li class="spanMenuHamburguer__li">
+          <a href="./pages/contacto.html" class="spanMenuHamburguer__link">Contacto</a>
+        </li>
+      </ul>
+    </nav>
     <!--=================================================================== TITULO + INFO + LINKS ===================================================================-->
-    <div class="fondoContacto">
-      <section class="pagContacto hijoFondo">
-        <div class="contenidoContacto">
-          <h1 class="p-3 text-light hijoFondo m-4">Contáctanos!</h1>
-        </div>
-        <div class="contenidoContacto2">
-          <div class="infoContacto">
-            <div class="caja">
-              <div class="socialLink inconoContacto">
-                <a href="https://www.linkedin.com/feed/" target="_blank"
-                  ><span><i class="fa-brands fa-linkedin"></i></span
-                ></a>
-              </div>
-              <div class="textoContacto">
-                <h2>Linkedin</h2>
-                <p>Cecilia Alejandra Rios</p>
-              </div>
-            </div>
-            <div class="caja">
-              <div class="socialLink inconoContacto">
-                <a href="https://web.whatsapp.com/" target="_blank"
-                  ><span><i class="fa fa-whatsapp" aria-hidden="true"></i></span
-                ></a>
-              </div>
-              <div class="textoContacto">
-                <h2>WhatsApp</h2>
-                <p>+54 9 3516581814</p>
-              </div>
-            </div>
-            <div class="caja">
-              <div class="socialLink inconoContacto">
-                <a
-                  href="https://www.google.com/intl/es-419/gmail/about/"
-                  target="_blank"
-                  ><span
-                    ><i class="fa fa-envelope-o" aria-hidden="true"></i></span
-                ></a>
-              </div>
-              <div class="textoContacto">
-                <h2>Email</h2>
-                <p>gchconsultora4.0@gmail.com</p>
-              </div>
-            </div>
+<div class="contenedorContacto fondoContacto">
+  <div><h1 class="hijoFondo">CONTACTANOS!</h1></div>
+  <div class="contenidoContacto hijoFondo">
+    <div class="socialLinksContacto">
+      <div class="infoContacto">
+        <div class="caja">
+          <div class="socialLink inconoContacto">
+            <a href="https://www.linkedin.com/feed/" target="_blank"
+              ><span><i class="fa-brands fa-linkedin"></i></span
+            ></a>
           </div>
-          <!--=================================================================== FORMULARIO ===================================================================-->
-          <div class="formularioContacto">
-            <form>
-              <h3>Enviar Mensaje</h3>
-              <div class="inputCaja">
-                <input type="text" name="" required="required" />
-                <span class="">Nombre Completo</span>
-              </div>
-              <div class="inputCaja">
-                <input type="text" name="" required="required" />
-                <span class="">Email</span>
-              </div>
-              <div class="inputCaja">
-                <textarea required="required"></textarea>
-                <span class="">Escribe tu mensaje</span>
-              </div>
-              <div class="inputCaja">
-                <input type="submit" name="" value="send" />
-              </div>
-            </form>
+          <div class="textoContacto">
+            <h2>Linkedin</h2>
+            <p>Cecilia Alejandra Rios</p>
           </div>
         </div>
-      </section>
+        <div class="caja">
+          <div class="socialLink inconoContacto">
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><span><i class="fa fa-whatsapp" aria-hidden="true"></i></span
+            ></a>
+          </div>
+          <div class="textoContacto">
+            <h2>WhatsApp</h2>
+            <p>+54 9 3516581814</p>
+          </div>
+        </div>
+        <div class="caja">
+          <div class="socialLink inconoContacto">
+            <a
+              href="https://www.google.com/intl/es-419/gmail/about/"
+              target="_blank"
+              ><span
+                ><i class="fa fa-envelope-o" aria-hidden="true"></i></span
+            ></a>
+          </div>
+          <div class="textoContacto">
+            <h2>Email</h2>
+            <p>gchconsultora4.0@gmail.com</p>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="formularioContacto">
+      <form>
+        <h3>Enviar Mensaje</h3>
+        <div class="inputCaja">
+          <input type="text" name="" required="required" />
+          <span class="">Nombre Completo</span>
+        </div>
+        <div class="inputCaja">
+          <input type="text" name="" required="required" />
+          <span class="">Email</span>
+        </div>
+        <div class="inputCaja">
+          <textarea required="required"></textarea>
+          <span class="">Escribe tu mensaje</span>
+        </div>
+        <div class="inputCaja">
+          <input type="submit" name="" value="send" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+          <!--=================================================================== FORMULARIO ===================================================================-->
+          
     <!--=================================================================== FOOTER ===================================================================-->
     <footer>
       <div class="footerContainer">
@@ -161,7 +181,7 @@
         <span class="copy">&copy;2022, gestionar-R.com </span>
       </div>
     </footer>
-    <script src="../javaScript/proyectoRRHH.js"></script>
     <script src="https://use.fontawesome.com/1604f43dc3.js"></script>
+    <script type="module" src="../javaScript/header/menuAmburguer.js"></script>
   </body>
 </html>
