@@ -1,6 +1,6 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1536px) {
     header{
-     height: 14vh;
+     height: 20vh;
      }
      header nav{
         width: 60%;
@@ -10,7 +10,7 @@
       }
      .logo-consultora{
         width: 25%;
-        height: 12vh;
+        height: 15vh;
       }
     .textoIndex {
         height: 20vh;
@@ -69,4 +69,129 @@
         width: 100%;
         height: 18vh;
       }
-  }
+    /*================================= CLASES PARA CONTACTO ==========================================*/
+ .fondoContacto {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+   }
+   .fondoContacto .contenedorContactoTitulo{
+  display: flex;
+  height: 35vh;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  font-size: calc(2vw + .4rem);
+  font-family: Arial, Helvetica, sans-serif;
+   }
+   .fondoContacto .contenedorContactoTitulo h1{
+    letter-spacing: 5px;
+   }
+   .fondoContacto .contenedorContactoTitulo .fraseContacto{
+     width: 100%;
+     border-bottom: 3px solid #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 2vh;
+     text-align: center;
+     color: #fff;
+     font-size: calc(1vw + .4rem);
+   }
+  .contenidoContacto{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+   padding: 1vw;
+   background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+ }
+  .contenidoContacto .infoContacto{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+   .contenidoContacto .infoContacto .caja{
+   width: 30%;
+   height: 90vh;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   margin: 1vw;
+   padding: 0 2vw;
+   color: #0e0d0d;
+   border: 3px double #0e0d0d;
+ }
+  .contenidoContacto .infoContacto .caja .socialLink{
+   font-size: calc(7vw + .4rem);
+ }
+ #textoContacto{
+  font-size: calc(1vw + .8rem);
+}
+#textoContacto2{
+  font-size: calc(1vw + .8rem);
+} 
+}
+/*================================= CLASES PARA FOOTER ==========================================*/
+footer {
+ width: 100%;
+ height: 25vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ background: linear-gradient(to left, rgb(19, 18, 18), rgb(53, 51, 51));
+ color: rgb(206, 206, 205);
+}
+footer .footerContainer {
+ width: 100%;
+ height: 100%;
+ box-sizing: border-box;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0 0 0 1rem;
+}
+
+footer .footerContainer .footerContainerContenido{
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+ text-align: center;
+}
+
+footer .footerContainer .footerContainerContenido .logoFooter {
+ width: 100%;
+ height: 15vh;
+ margin: auto;
+ align-items: center;
+ justify-content: center;
+ display: flex;
+}
+footer .footerContainer .footerContainerContenido .logoFooter .logo2 {
+ width: 100%;
+ height: 17vh;
+ align-self: center;
+ position: relative;
+ top:.5rem;
+}
+
+footer .footerContainer .footerContainerContenido .socialContainer {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ width: 70%;
+ align-self: center;
+ gap:.7rem;
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink {
+font-size: calc(1.5rem + 2vw);
+}
+footer .footerContainer .footerContainerContenido .socialContainer .socialLink a {
+ color: rgb(103, 255, 204);
+}
+footer .footerContainer .footerContainerContenido .socialContainer .iconoFooter2 {
+ gap:1rem;
+}

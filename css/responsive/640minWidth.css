@@ -47,10 +47,68 @@
         font-size: calc(2vw + .1rem);
       }
  /* ========================================== PAGINA CONTACTO ========================================== */
- .fondoContacto .pagContacto {
-  padding: 30px 45px;
+ .fondoContacto {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); 
+   }
+   .fondoContacto .contenedorContactoTitulo{
+  display: flex;
+  height: 35vh;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5%;
+  font-size: calc(2vw + .4rem);
+  font-family: Arial, Helvetica, sans-serif;
+   }
+   .fondoContacto .contenedorContactoTitulo h1{
+    letter-spacing: 5px;
+   }
+   .fondoContacto .contenedorContactoTitulo .fraseContacto{
+     width: 100%;
+     border-bottom: 3px solid #ffffff;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     color: #fff;
+     font-size: calc(1vw + .4rem);
+   }
+  .contenidoContacto{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height:100%;
+   padding: 1vw;
+   background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+ }
+  .contenidoContacto .infoContacto{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+   .contenidoContacto .infoContacto .caja{
+   width: 30%;
+   height: 60vh;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   margin: 1vw;
+   padding: 0 2vw;
+   color: #0e0d0d;
+   border: 3px double #0e0d0d;
+ }
+  .contenidoContacto .infoContacto .caja .socialLink{
+   font-size: calc(7vw + .4rem);
+ }
+ #textoContacto{
+  font-size: calc(1vw + .3rem);
 }
-.fondoContacto::before {
-  height: 131vh;
-}
+#textoContacto2{
+  font-size: calc(1vw + .3rem);
+} 
+
+ 
 }
