@@ -22,10 +22,4 @@
     margin: 5px;
   }
    /* ========================================== PAGINA CONTACTO ========================================== */
- .fondoContacto .pagContacto {
-  padding: 50px 100px;
-}
-.fondoContacto::before {
-  height: 114vh;
-}
 }

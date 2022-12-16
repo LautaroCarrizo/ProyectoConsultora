@@ -55,4 +55,13 @@
         width: 100%;
         height: 24vh;
       }
+          /*================================= CLASES PARA CONTACTO ==========================================*/
+          .contenidoContacto::before{
+            content: "";
+            width: 100%;
+            height: 60%;
+            position: absolute;
+            background: black;
+            opacity: 0.6;
+           }
   }
