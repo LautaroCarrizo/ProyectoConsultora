@@ -71,6 +71,28 @@
       }
   
             /*================================= CLASES PARA NOSOTROS ==========================================*/
+            .containerVision {
+              min-height: 50vh;
+            }
+            .textoNosotrosVision{
+              gap: 3rem;
+            }
+            .containerVision .InfoVisionTexto .fraseNosotros2 {
+              font-size: calc(2vw + .9rem);
+            }
+            .fundadoraContainer .textoFundadora p{
+              font-size: calc(.5rem + .8rem);
+              }
+           .fundadoraContainer .infoFundadora {
+            font-size: calc(.6rem + .7rem);
+           }
+           .fundadoraContainer .infoFundadora h2 {
+            font-size: calc(1vw + .9rem);
+           }
+           .cardContainerNosotros .cardNosotros {
+             font-size: calc(1.1vw + .1rem);
+              height:73vh;
+          }
             .bordeValores2 {
               border-top: solid 3px #333;
             }
@@ -80,8 +102,8 @@
             .slider .sliderTrack {
               display: flex;
               align-items: center;
-              animation: scroll 40s linear infinite;
-              -webkit-animation: scroll 40s linear infinite;
+              animation: scroll 27s linear infinite;
+              -webkit-animation: scroll 27s linear infinite;
               width: 2800px;
             }
             .slider .sliderTrack .slide img {
@@ -90,7 +112,7 @@
             }
                /* ========================================== PAGINA BUSQUEDAS ========================================== */
                .conteinerBusquedas .referenciasBusquedas .propuestasBusquedas{
-                height: 23vh;
+                height: 12vh;
               }
     /*================================= CLASES PARA CONTACTO ==========================================*/
  .fondoContacto {

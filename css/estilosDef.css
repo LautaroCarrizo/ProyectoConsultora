@@ -365,7 +365,6 @@
   .sectionVision{
     background-color: #333;
   }
-  
   .containerVision {
     text-align: center;
     display: flex;
@@ -374,7 +373,7 @@
     justify-content: center;
     min-height: 250px;
     position: absolute;
-    top: 25% ;
+    top: 12vh;
   }
   .containerVision .InfoVisionTexto {
     display: flex;
@@ -385,17 +384,18 @@
   .containerVision .InfoVisionTexto .fraseNosotros2 {
     font-family: Georgia, "Times New Roman", Times, serif;
     width: 100%;
-    font-size: calc(2vw + 1.1rem);
-    padding: 0 7%;
+    font-size: calc(.1rem + .9rem);
+    padding: 10vh 4vh;
+    text-align: center;
+    margin: 0;
   }
   .containerVision::before {
     content: "";
     width: 100%;
-    min-height: 45vh;
+    min-height: 35vh;
     position: absolute;
-    bottom: 31%;
     background: #0e0d0d;
-    opacity: 0.4;
+    opacity: 0.5;
   }
 
   .textoNosotrosVision__container{
@@ -407,11 +407,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 55vh;
+    width: 100vw;
+    height: 30vh;
     padding: 0 10%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: calc(2vw + .5rem);
+    font-size: calc(1vw + .4rem);
     width: 100%;
     gap: 1rem;
     text-align: center  ;
@@ -425,11 +425,9 @@
   .textoNosotrosVision .preguntaNosotros {
     color: #ffefba;
   }
-
   .imgEquipo {
     width: 100%;
-    height: 45vh;
-    
+    height: 35vh;
   }
 
   /* =============== FUNDADORA ============= */
@@ -446,10 +444,14 @@
   .fundadoraContainer .infoFundadora {
     width: 80%;
     gap: .5rem;
+    font-size: calc(1vw + .6rem);
     text-align: center;
     order: 1;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
+  .fundadoraContainer .infoFundadora h2{
+    font-size: calc(1vw + .8rem);
+   }
   .fundadoraContainer .infoFundadora .bordeValores {
     border-top: 3px solid #333;
     padding: .7rem 0;
@@ -460,9 +462,15 @@
     width: 80%;
     text-align: center;
     order: 3;
+    font-size: calc(1vw + .6rem);
   }
   .imagenCeci{
     order: 2;
+  }
+  .fundadoraContainer .imgFundadora {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
   }
 
   .fundadoraContainer .imgFundadora {
@@ -470,166 +478,52 @@
     height: 200px;
     border-radius: 50%;
   }
-  .slider {
-    width: 75vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-  }
-  .slider .sliderTrack {
-    display: flex;
-    align-items: center;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
-    width: 2800px;
-  }
-  .slider .sliderTrack .slide {
-    width: 200px;
-    margin: 15px;
-    padding: 15px;
-  }
-  .slider .sliderTrack .slide img {
-    width: 100%;
-    height: 80px;
-  }
-  @keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-1400px);
-      transform: translateX(-1400px);
-    }
-  }
- 
-  /*================================= CLASES PARA NOSOTROS ==========================================*/
-  /* .containerVision {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: center;
-    background: url(../img/imgMuestra.jpg) no-repeat center center;
-    min-height: 250px;
-    background-size: cover;
-  }
-  .containerVision .InfoVisionTexto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .containerVision .InfoVisionTexto .fraseNosotros2 {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    width: 100%;
-    margin: 30px;
-    padding: 20px;
-  }
-  .containerVision::before {
-    content: "";
-    width: 100%;
-    min-height: 250px;
-    position: absolute;
-    background: #0e0d0d;
-    opacity: 0.2;
-  }
-  .textoNosotrosVision {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 80vh;
-    padding: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-    width: 70%;
-    background: #333;
-  }
-  .textoNosotrosVision .preguntaNosotros {
-    color: #ffefba;
-  }
-  .textoNosotrosVision .conteinerImgNosotros {
-    width: 30%;
-  }
-  .textoNosotrosVision .conteinerImgNosotros .imgEquipo {
-    position: relative;
-    left: 60%;
-    height: 577px;
-    width: 598px;
-  }
-  .fundadoraContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50vh;
-    color: black;
-  }
-  .fundadoraContainer .infoFundadora {
-    width: 40%;
-    margin: 10px;
-    padding: 0px 0px 10px;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  .fundadoraContainer .infoFundadora .bordeValores {
-    border-top: 3px solid #333;
-  }
-  .fundadoraContainer .textoFundadora {
-    width: 60%;
-    margin: 20px;
-    padding: 10px;
-  }
-  .fundadoraContainer .imgFundadora {
-    position: relative;
-    left: -10%;
-    width: 300px;
-    height: 200px;
-    top: 10px;
-    border-radius: 50%;
-    margin: 10px;
-  }
+  /*=========== VALORES ==============*/
   .fondoValores {
     background: #333;
-    min-height: 170px;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
   }
   .fondoValores .Titulos2 {
-    top: 20px;
-    padding: 0px 0px 10px;
-    height: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 5px;
-    font-weight: 300;
+     font-size: calc(1vw + .5rem);
   }
   .fondoValores .Titulos3 {
-    top: 20px;
-    padding: 0px 0px 10px;
-    height: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 5px;
     font-weight: 300;
-    margin-bottom: 30px;
+     font-size: calc(1vw + .9rem);
   }
   .textoValores {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 20px;
-    letter-spacing: 2px;
-    height: 20px;
+    padding: 4% 5% 0 5%;
+    text-align: center;
+     font-size: calc(1vw + .5rem);
   }
-  
+  .col{
+    padding:3%;
+  }
   .cardContainerNosotros {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
   }
   .cardContainerNosotros .cardNosotros {
+    height:76vh;
+    width:75vw;
     background: #ffffff;
-    height: 500px;
-    padding: 5px;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
+     font-size: calc(1vw + .5rem);
   }
   .cardContainerNosotros .cardNosotros .imgValores {
     width: 200px;
@@ -637,17 +531,14 @@
     border-radius: 50%;
   }
   .cardContainerNosotros .cardNosotros .cardNosotrosTitulo {
-    letter-spacing: 5px;
+      font-size: calc(2vw + .8rem);
     font-weight: 300;
   }
   .cardContainerNosotros .cardNosotros .card-text1 {
     letter-spacing: 2px;
     border-top: 3px rgb(235, 171, 74) solid;
     margin: 10px;
-  }*/
-  /* .bordeValores2 {
-    border-top: solid 3px #333;
-  } */
+  }
   .bordeValores2 .tituloClientes {
     position: relative;
     width: 100%;
@@ -731,6 +622,17 @@
   }
   .fondoBusquedas2 .infoBusquedas3 .bordeBusquedas {
     border-bottom: solid 2px white;
+  }
+  .tituloPropuestas{
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(to right, #000428, #004e92);
+  }
+  .tituloPropuestas h4{
+    font-size: calc(1vw + .4rem);
+    text-align: center;
+    color: rgb(255, 240, 240);
+    padding: 2vh;
   }
   .conteinerBusquedas {
     width: 100%;

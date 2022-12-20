@@ -39,5 +39,96 @@
         width: 100%;
         height: 22vh;
       }
+       /* ========================================== PAGINA NOSOTROS ========================================== */
+  .containerVision {
+    min-height: 40vh;
+  }
+
+  .containerVision .InfoVisionTexto .fraseNosotros2 {
+    font-size: calc(1.2vw + .8rem);
+  }
+  .textoNosotrosVision__container{
+    flex-direction: row;
+  }
+  .textoNosotrosVision {
+    font-size: calc(1.2vw + .1rem);
+    width: 100%;
+    gap: 2rem;
+  }
+  .imgEquipo {
+    width: 100%;
+    height: 65vh; 
+  }
+  .fundadoraContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 0;
+  }
+  .fundadoraContainer .textoFundadora {
+    order: 2;
+    width: 60%;
+    padding: 0 1vw;
+    }
+    .fundadoraContainer .textoFundadora p{
+      font-size: calc(.5rem + .4rem);
+      }
+   .fundadoraContainer .infoFundadora {
+    font-size: calc(.6rem + .1rem);
+    order:1;
+    width: 40%;
+   }
+   .fundadoraContainer .infoFundadora h2{
+    font-size: calc(.7rem + .5rem);
+   }
+  .fundadoraContainer .imagenCeci {
+    order: 3;
+    }
+  .fundadoraContainer .textoFundadora {
+    font-size: calc(1.2vw + .3rem);
+     }
+     .textoValores{
+      font-size: calc(1.2vw + .1rem);
+     }
+     .cardContainerNosotros {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+    }
+    .col{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+    }
+    .cardContainerNosotros .cardNosotros {
+    height:65vh;
+    width:23vw;
+    background: #ffffff;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+     font-size: calc(.4rem + .4rem);
+  }
+  .cardContainerNosotros .cardNosotros .imgValores {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  .cardContainerNosotros .cardNosotros .cardNosotrosTitulo {
+      font-size: calc(2vw + .2rem);
+    font-weight: 300;
+  }
+  .bordeValores2 {
+    border-top: solid 3px #333;
+  }
+  .bordeValores2 .tituloClientes{
+    font-size: calc(2vw + .5rem);
+  }
          /*================================= CLASES PARA CONTACTO ==========================================*/
   }

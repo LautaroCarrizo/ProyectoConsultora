@@ -46,6 +46,61 @@
         height: 40px;
         font-size: calc(2vw + .1rem);
       }
+       /* ========================================== PAGINA NOSOTTOS ========================================== */
+       .containerVision {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        background: url(../../img/imgMuestra.jpg) no-repeat center center;
+        min-height: 40vh;
+        background-size: cover;
+        position: relative;
+        top: 0;
+      }
+      .containerVision::before {
+        content: "";
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        bottom: 0%;
+        background: #0e0d0d;
+        opacity: 0.4;
+      }
+      .containerVision .InfoVisionTexto .fraseNosotros2 {
+        font-size: calc(.5rem + .9rem);
+      }
+      .textoNosotrosVision__container{
+        flex-direction: row;
+      }
+      .textoNosotrosVision {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 65vh;
+        padding: 0 10%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: calc(1.2vw + .3rem);
+        width: 100%;
+        gap: 2rem;
+        text-align: center  ;
+        background: #333;
+      }
+      .imgEquipo {
+        width: 100%;
+        height: 65vh; 
+      }
+      .cardContainerNosotros .col{
+        padding: 1%;
+      }
+      .cardContainerNosotros .cardNosotros{
+        width:55vw;
+        height: 60vh;
+      } 
+      .bordeValores2 {
+        border-top: solid 3px #333;
+      } 
  /* ========================================== PAGINA CONTACTO ========================================== */
  .fondoContacto {
   background: linear-gradient(to right, #232526, #414345);
