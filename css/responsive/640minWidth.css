@@ -121,5 +121,41 @@
 .contenidoContacto .infoContacto .caja .socialLink a{
   color: #4effed;
 }
- 
+ /*================================= CLASES BUSQUEDAS ==========================================*/
+.containerBusquedasTitulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+}
+.containerBusquedasTitulo .fondoBusquedas {
+  height: 25vh;
+  width: 45%;
+}
+.containerBusquedasTitulo .infoBusquedas .infoBusquedas2 h2 {
+  padding: 5vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(2vw + .4rem);
+}
+.fondoBusquedas::before {
+  content: "";
+  width: 45%;
+  height: 25vh;
+  position: absolute;
+  background: black;
+  opacity: 0.5;
+}
+.fondoBusquedas2 {
+  width: 55%;
+  height: 100%;
+}
+.fondoBusquedas2 .infoBusquedas3 {
+  width: 100%;
+  color: #ffff;
+  text-align: center;
+  font-size: calc(1vw + .3rem);
+  padding: 2vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 }
