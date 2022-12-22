@@ -105,15 +105,15 @@
       padding: 0;
     }
     .cardContainerNosotros .cardNosotros {
-    height:65vh;
-    width:23vw;
+    height:72vh;
+    width:21vw;
     background: #ffffff;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-     font-size: calc(.4rem + .4rem);
+    justify-content:center;
+     font-size: calc(.3rem + .3rem);
   }
   .cardContainerNosotros .cardNosotros .imgValores {
     width: 200px;

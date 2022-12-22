@@ -80,6 +80,10 @@
        .fundadoraContainer .infoFundadora {
         font-size: calc(.6rem + .4rem);
        }
+       .cardContainerNosotros .cardNosotros{
+        height: 80vh;
+        font-size: calc(.3rem + .5rem);
+       }
         .bordeValores2 {
           border-top: solid 3px #333;
         }

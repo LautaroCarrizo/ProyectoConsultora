@@ -70,8 +70,9 @@
     padding: 1%;
   }
   .cardContainerNosotros .cardNosotros{
-    width:55vw;
-    height: 60vh;
+    width:45vw;
+    height: 70vh;
+    font-size: calc(.4rem + .3rem);
   } 
   .bordeValores2 {
     border-top: solid 3px #333;
