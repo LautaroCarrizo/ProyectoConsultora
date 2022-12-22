@@ -526,6 +526,11 @@
     justify-content: space-evenly;
      font-size: calc(1vw + .5rem);
   }
+  .cardContainerNosotros .cardNosotros .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .cardContainerNosotros .cardNosotros .imgValores {
     width: 200px;
     height: 200px;
