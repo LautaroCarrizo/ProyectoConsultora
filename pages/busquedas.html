@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +16,7 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../css/estilosDef.css" />
+    <link rel="stylesheet" href="../css/spanBusquedas.css">
     <link rel="stylesheet" href="../css/responsive/640minWidth.css" />
     <link rel="stylesheet" href="../css/responsive/800minWidth.css" />
     <link rel="stylesheet" href="../css/responsive/1000minWidth.css" />
@@ -28,7 +29,8 @@
     ></script>
     <title>Consultura</title>
   </head>
-  <body>
+  <body id="body">
+    <span class="hidden superspan" id="superspan"></span>
     <!--=================================================================== NAV + LOGO ===================================================================-->
     <header>
       <div class="menuAmburguer__container">
@@ -75,7 +77,7 @@
     <!--=================================================================== TITULO BUSQUEDAS + EMAIL ===================================================================-->
     <div class="containerBusquedasTitulo">
       <div class="fondoBusquedas infoBusquedas">
-        <div class="infoBusquedas2 hijoFondo text-center">
+        <div class="text-center infoBusquedas2 hijoFondo">
           <h2>Busquedas Laborales</h2>
         </div>
       </div>
@@ -91,42 +93,7 @@
     </div>
     <!--=================================================================== CARDS PROPUESTAS LABORALES ===================================================================-->
      <div class="tituloPropuestas"><h4>PROPUESTAS</h4></div>
-    <div class="conteinerBusquedas">
-      <div class="referenciasBusquedas">
-        <h3>Asesor Comercial</h3>
-        <div class="propuestasBusquedas">
-          <p>Empresa radicada en Córdoba. La misma es especialista en brindar soluciones domésticas e industriales mediante la utilización de energía solar.
-            Nos orientamos a personas honestas, con deseos de sumarse a una empresa en expansión, entusiastas, con alta iniciativa y proactividad, con excelente comunicación.</p>
-            <div class="btn2" id="btn2">
-              <a id="infoPropuesta"><span>información</span></a>
-            </div>
-        </div>
-      </div>
-      <div class="referenciasBusquedas">
-        <h3>Supervisor de Almacén</h3>
-        <div class="propuestasBusquedas">
-          <p>Empresa metalúrgica, de gran envergadura a nivel nacional e internacional.
-            Se trata de una Compañía en proceso de evolución constante, centrada en el diseño y la innovación.
-            Nos enfocamos en una persona con amplia experiencia en almacén, con marcado liderazgo y capacidad de resolución.</p>
-          <div class="btn2" id="btn2">
-            <a id="infoPropuesta"><span>información</span></a>
-          </div>
-        </div>
-      </div>
-      <div class="referenciasBusquedas">
-        <h3>Ejecutivo de Ventas</h3>
-        <div class="propuestasBusquedas">
-          <p>Empresa de Medicina
-            Prepaga Sucursal Villa María.
-            Nos orientamos a personas entusiastas, con alta iniciativa y proactividad, buena presencia y
-            excelente comunicación. Capacidad de alcanzar y superar los objetivos y gestionar
-            adecuadamente los tiempos.</p>
-          <div class="btn2" id="btn2">
-            <a id="infoPropuesta"><span>información</span></a>
-          </div>
-        </div>
-      </div>
-     </div>
+    <div class="conteinerBusquedas" id="conteinerBusquedas"></div>
     <!--=================================================================== FOOTER ===================================================================-->
     <footer>
       <div class="footerContainer">
@@ -168,6 +135,8 @@
         <span class="copy">&copy;2022, gestionar-R.com </span>
       </div>
     </footer>
-    <script type="module" src="../javaScript/header/menuAmburguer.js"></script>
+    <script type="module" src="../javaScript/busquedas/busquedas.js"></script>
+    <script type="module" src="../javaScript/busquedas/detailBusquedas.js"></script>
+    <script src="../javaScript/header/menuAmburguer.js"></script>
   </body>
 </html>

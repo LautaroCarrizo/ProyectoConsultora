@@ -1,0 +1,142 @@
+
+.superspan{
+    width: 100%;
+    height: 150%;
+    padding: 20vh 0;
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(0, 0, 0,.7);
+}
+
+.hidden{
+    height: 100%;
+    display: none;
+}
+
+.superspan__container{
+    width: 90%;   
+    margin: 0 auto;
+    background-color: #ddd6f3;
+}
+.contenederDatosPrincipal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contenederDatosPrincipal .contenederDatos1{
+    padding: 2vh 5vh;
+    width: 20%;
+    text-align: center;
+    border-right: solid 2px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contenederDatosPrincipal .contenederDatos2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+    height: 100%;
+    padding: 2vh 2vh;
+}
+.ContenedorBotonTitulo{
+    display: flex;
+    justify-content: space-between;
+    height: 9vh;
+}
+.superspan__titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(1vw + .5rem);
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 2vh 2vh;
+    color: white;
+    background: #4e54c8;
+}
+
+.superspan__container__data{
+    display: flex;
+    padding: 1vh .5rem;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.superspan__container__data h2{
+    font-size: calc(1vw + .1rem);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.superspan__container__data .container__data_texto{
+    padding: -5vh 5vh;
+    width: 100%;
+    font-size: calc(.3rem + .6rem);
+}
+.superspan__container .containerBotonPrupuestas{
+ display: flex;
+ justify-content: right;
+}
+.superspan__container .containerBotonPrupuestas .botonPropuestas{
+    height: 7.7vh;
+    width: 8vh;
+    background: rgb(195, 0, 0);
+}
+
+@media screen and (max-width: 1280px){
+    .superspan__container__data h2{
+        font-size: calc(1vw + .4rem);
+    }
+} 
+
+@media screen and (max-width: 800px){
+    .superspan{
+        height: 160%;
+    }
+
+    .container__data_texto{
+        overflow-y: scroll;
+        height: 20vh;
+    }
+
+    .contenederDatosPrincipal .contenederDatos1{
+        padding: 2vh 1%;
+    }
+
+    .superspan__container__data h2{
+        font-size: calc(1vw + .4rem);
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .superspan{
+        height: 180%;
+    }
+
+    .contenederDatosPrincipal .contenederDatos1{
+        padding: 2vh 0;
+    }
+
+}
+
+@media screen and (max-width: 420px){
+    .superspan{
+        height: 200%;
+    }
+
+    .superspan__container__data{
+        padding: .1rem;
+    }
+    .superspan__container__data h2{
+        font-size: calc(3vw);
+        font-weight: bold;
+    }
+
+    .superspan__container__data .container__data_texto{
+        font-size: calc(.3rem + .4rem);
+    }
+}

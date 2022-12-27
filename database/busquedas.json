@@ -1,0 +1,31 @@
+{
+    "busquedas":[
+        {
+            "id":1,
+            "fecha":"Diciembre 2022",
+            "puesto":"Asesor Comercial",
+            "estado":"Abierto",
+            "descripcion":"Empresa radicada en Córdoba. La misma es especialista en brindar soluciones domésticas e industriales mediante la utilización de energía solar.Nos orientamos a personas honestas, con deseos de sumarse a una empresa en expansión, entusiastas, con alta iniciativa y proactividad, con excelente comunicación." ,
+            "Funciones":"Realizar ventas a clientes finales que compren de manera directa, buscando alcanzar y/o superar los objetivos de ventas. <br> Asesorar y acompañar al cliente en el proceso de venta. <br> Confeccionar los presupuestos requeridos. <br> Atender a los clientes potenciales y vigentes que ingresan al salón de ventas y que se contactan con la organización. <br> Asesorar a los clientes en función de sus necesidades. <br> Mantener el orden y la limpieza en su lugar de trabajo. <br> Participar en las capacitaciones que programe la organización. <br> Procesar datos, completar documentación y realizar las tareas administrativas asociadas." ,
+            "requisitos": "Secundario completo excluyente. <br> Se valorará formación técnica o en comercialización. <br> Experiencia mínima de 2 años en ventas. <br> Se valorará la experiencia en venta de materiales de construcción, <br> artículos para el hogar, ferreterías, autos. <br> Saber conducir. <br> Movilidad propia (preferentemente) <br> Manejo de PC, Entorno Windows"
+        },
+        {
+            "id":2,
+            "fecha":"Diciembre 2022",
+            "puesto":"Supervisor de Almacén",
+            "estado":"abierto",
+            "descripcion":"Empresa metalúrgica, de gran envergadura a nivel nacional e internacional.Se trata de una Compañía en proceso de evolución constante, centrada en el diseño y la innovación.Nos enfocamos en una persona con amplia experiencia en almacén, con marcado liderazgo y capacidad de resolución.",
+            "Funciones":" Liderar el área a su cargo, asegurando el logro de los resultados esperados, estableciendo prioridades, controlando los resultados y promoviendo la mejora de los procesos operativos y administrativos. <br> Evaluar el desempeño del equipo a su cargo, brindándoles orientación, capacitación, desarrollo y disciplina, con el fin de establecer el mejor clima organizacional. <br> Identificar la necesidad de insumos, adecuaciones, mantenimiento e infraestructura, realizando acciones y solicitando reparaciones o compras. <br> Asegurar el correcto funcionamiento del almacén y despacho de la empresa, así como todo el manejo de materiales, tomando todas las medidas necesarias para lograr los objetivos. <br> Controlar el stock de productos y repuestos, asegurando su exactitud. <br> Recibir partidas de materia prima y materiales procesados por terceros. <br> Realización de inventarios y organización de materiales en stock. Supervisión de datos y seguimiento de discrepancias. <br> Asegurar el correcto abastecimiento de partes/equipos/ítems para el proceso productivo, asegurando la separación de materiales para abastecimiento de los sectores/puesto de trabajo. <br> Dar seguimiento a los artículos a comprar en el almacén y solicitarlos cuando sea necesario. <br> Informar al área de Ingeniería sobre irregularidades en los kits de componentes y estructuras de productos. <br> Envío de productos, repuestos y equipos según cronograma preestablecido. <br> Asegurar el despacho y control de entradas, almacenamiento y salidas a través del sistema" ,
+            "requisitos": "  Secundario completo Excluyente <br> Tecnicatura en Administración, Logística, Sistemas o afines Deseable "
+        },
+        {
+            "id":3,
+            "fecha":"Enero 2024",
+            "puesto":"Ejecutivo de Ventas",
+            "estado":"cerrado",
+            "descripcion":"Empresa de Medicina Prepaga Sucursal Villa María.Nos orientamos a personas entusiastas, con alta iniciativa y proactividad, buena presencia y excelente comunicación. Capacidad de alcanzar y superar los objetivos y gestionar adecuadamente los tiempos.",
+            "Funciones":"Generar volumen de contactos que permitan llegar a los potenciales afiliados. <br> Asesorar a potenciales afiliados sobre los planes de cobertura médica asistencial disponible. <br> Gestionar el proceso de venta de planes de salud desde la prospección hasta el ingreso del afiliado. <br> Contactar de manera telefónica a los potenciales afiliados. <br> Realizar visitas a potenciales afiliados tanto individuales y corporativos. <br> Realizar las acciones necesarias para garantizar el cumplimiento del objetivo de ventas. <br> Completar documentación y mantener actualizado los datos en el CRM de ventas. <br> Atender inquietudes y consultas posventa." ,
+           "requisitos": "Secundario completo excluyente. <br> Experiencia mínima de 2 años en posiciones similares <br> Iniciativa para realizar ventas a “puerta fría” <br> Manejo de PC Entorno Windows <br> Formación en cursos de Comercialización o afines (Preferente) <br> Experiencia en ventas de intangibles (Preferente)"
+        }
+    ]
+}
